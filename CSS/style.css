@@ -1,8 +1,4 @@
-img{
-    max-width: 150px;
-    aspect-ratio: 2/2;
-   
-}
+
 .grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -14,7 +10,7 @@ img{
     
 }
 .cards{
-    width: 150px;
+    width: 150px;   /* aumentar a imagem em alguns milimetros*/
     aspect-ratio: 2/2;
     position: relative;
     transition: all 400ms ease;
@@ -30,6 +26,7 @@ img{
 }
 .frente{
     background-size: cover;
+    
 }
 
 .atras{
@@ -38,9 +35,19 @@ img{
     background-position: center;
     backface-visibility: hidden;
 }
+/*
 .cards:hover{
     transform: rotateY(180deg);
 }
+*/
 body{
     background-color: blueviolet;
 }
+.tabuleiro{
+    background-color: blue;
+}
+.cards.rotated {
+    transform: rotateY(180deg);
+}
+.cards.found {
+    visibility: hidden;}
