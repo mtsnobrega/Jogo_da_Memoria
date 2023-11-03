@@ -43,11 +43,11 @@
 body{
     background-color: blueviolet;
 }
-.tabuleiro{
-    background-color: blue;
-}
-.cards.rotated {
+
+.revelar{
     transform: rotateY(180deg);
 }
-.cards.found {
-    visibility: hidden;}
+.efeito {
+    filter: saturate(0);
+    opacity: 0.5;
+}
