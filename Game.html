@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,26 @@
     <script type="text/Javascript" src="main2.js" defer></script>
     <title>Document</title>
 </head>
-<body>
-    <div class="tabuleiro">   
-        <div class="grid">
-            
-</div>
+<body onload="iniciarCronometro()">
+    <div class="conteiner">
+        <div class="mar">
+            <img src="Imagens/download.jpg" alt="">
+            <img src="Imagens/Going Merry.webp" alt="" class="merry">
+            <img src="Imagens/mar.png" alt="" class="imagem a">
+            <img src="Imagens/mar.png" alt="" class="imagem b">
+            <img src="Imagens/mar.png" alt="" class="imagem c">
+        </div>
+        
+        <div class="pai">
+            <div class="player">
+                <div class="top nome">Player:aaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                <div class="top time" id='cronometro'></div>
+                <div class="top reset"><button id="pontu"></button></div>
+            </div>
+            <div class="tabuleiro">
+                <div class="grid"></div>
+            </div>
+    </div>
     
 </body>
 </html>

@@ -52,3 +52,46 @@ const loadgame = () => {
 
 
 loadgame()
+
+
+
+
+function revelar({ target }) {
+    if (target.parentNode.className.includes('revelar')) {
+      return;
+    }
+  
+    if (pers1 === '') {
+      target.parentNode.classList.add('revelar');
+      pers1 = target.parentNode;
+    } else if (pers2 === '') {
+      target.parentNode.classList.add('revelar');
+      pers2 = target.parentNode;
+      comparar();
+    }
+  }
+  
+  function comparar() {
+    const carta1 = pers1.getAttribute('data-personagens');
+    const carta2 = pers2.getAttribute('data-personagens');
+    if (carta1 === carta2) {
+      pers1.firstChild.classList.add('efeito');
+      pers2.firstChild.classList add('efeito');
+      pers1 = '';
+      pers2 = '';
+    } else {
+      setTimeout(function () {
+        pers1.classList.remove('revelar');
+        pers2.classList.remove('revelar');
+        pers1 = '';
+        pers2 = '';
+      }, 500);
+    }
+  }
+
+
+
+
+
+
+
